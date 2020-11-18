@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="guess.css">
+  <title>human against machine</title>
+</head>
+<body>
+
+<!--всегда видимый блок--> 
+<div id="OpenBlock"> 
+  <p>I thought of a number from 
+    <input type = "number" id = "firstNumber">
+    to  
+    <input type = "number" id = "lastNumber">
+    <p id="intervalOutput"></p>
+    <br>If you guess, you will stay alive.
+    <br>I will tell you if my number is more or less than what you said. 
+    <br>You have only 7 attempts...
+    <br>Or if you want, i try gues your number 
+  </p>
+  <button class="BtnPlayerGuess">player guess</button>
+  <button class="BtnComputerGuess">computer guess</button>
+</div>
+
+<!--блок открывающийся при нажатии, на кнопку "player guess a number"-->
+  <div id="HumanGuess">
+    <label for="poleInput">YOUR CHOICE: </label>
+    <input type="number" class="poleInput">
+    <br>
+    <button class="BtnTry">TRY</button>
+  
+    <div class="resultParas">
+      <p class="guesses"></p>
+      <p class="lastResult"></p>
+      <p class="lowOrHi"></p>
+    </div>
+  </div>
+
+<!--блок открывающийся при нажатии, на кнопку "computer guess a number"-->
+<div id="CompGuess">
+    <div>Please, pick a random number!
+      <br>
+      <button id="pickNum">I am ready</button>
+    </div>
+    <div id="outputComp"></div>
+    <button id="btnYes">Yes</button>
+    <button id="btnNo">No</button>
+    <button id="btnEqual">It's my number!</button>  
+</div>
+<!--перезагрузка страницы-->
+<div id="Reload">
+ <button id="btnReset" onclick="window.location.reload()">Play Again!</button> 
+</div>
+
+<script src="extra.js"></script>
+</body>
+</html>

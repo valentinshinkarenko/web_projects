@@ -1,0 +1,158 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 25px;
+  padding: 50px 20px;
+  color: white;
+  background-image: url(pila.gif);
+  background-color: black;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-size:100%;
+}
+
+input { /* кнопки выбора мода  */
+  color: black; 
+  font-size: 20px;
+  display:inline-block;
+  
+}
+input[type='number'] { /* убрать стрелочки  */
+  -moz-appearance:textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* БЛОКИ */
+#HumanGuess {
+  visibility: hidden;
+  position: absolute;
+
+}
+#CompGuess{
+  visibility: hidden;
+  position: absolute;
+} 
+
+/* КНОПКИ */
+button, 
+button:active, 
+button:focus {
+    outline: none;
+}
+
+.BtnPlayerGuess, .BtnComputerGuess , #btnReset  { /* кнопки выбора мода, когда человек угадывает число компьютера */
+  border: 3px solid rgb(128, 128, 128);
+  border-radius: 50px;
+  padding: 5px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+.BtnPlayerGuess:hover:enabled { /* изменение кнопок выбора мода при наведении */
+  box-shadow: 2px 2px 2px 2px rgb(255, 255, 255);
+  font-size: 19px;
+}
+
+.disableMod { /* вид кнопки в нажатом состоянии */
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50px;
+  padding: 5px;
+  background-color: rgb(131, 31, 31);
+  color: rgb(255, 255, 255);
+  font-size: 19px;
+  cursor: pointer;
+  margin-bottom: 25px;
+  box-shadow: 2px 2px 2px 2px rgb(255, 255, 255);
+}
+
+.BtnComputerGuess:hover:enabled  { /* изменение кнопок выбора мода при наведении */
+  box-shadow: 2px 2px 2px 2px rgb(255, 255, 255);
+  font-size: 19px;
+}
+
+.disableModTwo { /* вид кнопки в нажатом состоянии */
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50px;
+  padding: 5px;
+  background-color: rgb(50, 116, 48);
+  color: rgb(255, 255, 255);
+  font-size: 19px;
+  cursor: pointer;
+  margin-bottom: 25px;
+  box-shadow: 2px 2px 2px 2px rgb(255, 255, 255);
+}
+ #btnNo   {  /*кнопки выбора мода, когда компьютер угадывает число человека  */
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50px;
+  padding: 5px;
+  background-color: rgb(131, 31, 31);
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  cursor: pointer;
+  margin-bottom: 25px; 
+ }
+
+  #btnYes, #pickNum,#btnEqual  {/*  кнопки выбора мода, когда компьютер угадывает число человека */ 
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50px;
+  padding: 5px;
+  background-color: rgb(50, 116, 48);
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  cursor: pointer;
+  margin-bottom: 25px; 
+  }
+
+#btnYes:hover {
+  box-shadow: 2px 2px 2px 2px rgb(255, 255, 255);
+  font-size: 19px;
+}
+#btnNo:hover {
+  box-shadow: 2px 2px 2px 2px rgb(255, 255, 255);
+  font-size: 19px;
+}
+#pickNum:hover {
+  box-shadow: 2px 2px 2px 2px rgb(255, 255, 255);
+  font-size: 19px;
+}
+#btnEqual:hover {
+  box-shadow: 2px 2px 2px 2px rgb(255, 255, 255);
+  font-size: 19px;
+}
+#btnReset:hover {
+  box-shadow: 2px 2px 2px 2px rgb(255, 255, 255);
+  font-size: 19px;
+}
+
+.BtnTry { /* кнопка 'try' с проверкой чисел  */
+  border: 3px solid rgb(226, 29, 29);
+  border-radius: 50px;
+  padding: 5px;
+  background-color: white;
+  color: black;
+  font-size: 40px;
+  cursor: pointer;
+  margin-left: 12%;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.BtnTry:hover { /* изменение кнопки 'try' при наведении  */
+  color: red;
+  box-shadow: 2px 2px 2px 2px rgb(243, 14, 14);
+  font-size: 42px;
+}
+#Reload {
+  visibility: hidden;
+  position: absolute;
+  margin-top: 15rem;
+}
+

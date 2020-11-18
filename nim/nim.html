@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIM game</title>
+    <link rel="stylesheet" href="nim.css" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Acme&display=swap">
+</head>
+<body>
+
+    <header>
+        <p class="nim">Hello, it's a NIM!</p>
+        <p class="rules">
+            The goal of the game is to add numbers in turn and be the first to reach the required amount! You can choose the easy or the hard level of the game!
+            If you choose a simple level of play, you can set the amount to which you want to play and the maximum number of steps. If you choose hard, then you play with one of the Apple programmers up to 100 with a maximum step of 9. In both cases, the sequence of moves will be determined by random.
+        </p>
+        <button class="mode" id="mode1">easy mode</button>
+        <button class="mode" id="mode2">hard mode</button> 
+     </header>
+
+ <hr>
+
+    <section class="centr">
+        <label>We are playing from 0 to:</label>
+        <input type="number" min=10 max=100 step=10  id="inputMax">
+        <label>And adding the numbers from 1 to max num:</label>
+        <input type="number" min=2 max=9 step=1 id='inputAddMax'>
+        <br>
+        <button class="otherBtn" id="btnStart" onclick="this.disabled = 'disabled';">Start the game</button>
+        <p class="whoFirst"></p> <!--кто первым ходит-->
+    </section>
+ 
+ <hr>
+ 
+    <section class="ending">
+        <p id="whoIsTurn"></p>
+        <p>Add your number to the sum</p>
+        <input type="number" id="humanInput">
+        <p class="poleMistake"></p>
+
+        <div class="sectionEnd">
+        <button class="otherBtn" id="btnFinishedTurn">I chose this number</button>
+        <p class="humanNumber"></p>    
+        </div>
+        
+        <div class="sectionEnd" id="sectionEndTwo">
+        <button class="otherBtn" id="btnComputerTurn">computer, your turn</button>
+        <p class="machineNumber"></p>    
+        </div>
+        <p class="inputTurn"></p>
+    </section>
+
+<hr>  
+
+    <section class="result">
+        <h1 id='currSum'>Current SUM = 0 </h1>       
+        <h1 class="itog"></h1> 
+    </section>
+
+<script src='nim.js'></script>
+
+</body>
+</html>
