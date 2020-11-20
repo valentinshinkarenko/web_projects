@@ -173,14 +173,3 @@ btnYes.addEventListener('click', btnYesFunc);
 pickNum.addEventListener('click', onClickComp);
 BtnPlayerGuess.addEventListener('click', HumanGuessFunc); //добавляем прослушивателя к кнопке выбора мода когда человек угадывает
 BtnComputerGuess.addEventListener('click', CompGuessFunc); //добавляем прослушивателя к кнопке выбора мода когда компьютер угадывает
-
-
-/*
-var play = document.getElementById('play');
-var game = document.getElementById('game')
-
-function onClickComp() {   
-game.style.visibility = 'visible';
-}
-
-*/

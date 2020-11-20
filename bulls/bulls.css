@@ -1,0 +1,99 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: black;
+  font-weight: 900;
+  background-image: url(cow3.jpg);
+  background-color: black;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-size: 100%;
+}
+
+/* Texts */
+#heading {
+  font-size: 2rem;
+  padding: 2%;
+  float: left;
+}
+
+#rules {
+margin-left: 37%;
+font-size: 1.2rem;
+padding-top: 1rem;
+}
+
+#game {
+  margin-left: 2%;
+  font-size: 1.1rem;
+  font-weight: 900;
+  visibility: hidden;
+  margin-top: -50px;
+}
+
+
+/* Buttons */
+.butonses {
+  margin-top: 17%;
+  margin-left: 43%;
+}
+
+#play {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 50px;
+  margin-left: 5rem; 
+}
+
+#play:hover {
+  background-color: rgba(3, 1, 1, 0.575);
+  color: rgb(233, 222, 222);
+  font-weight: 900;
+}
+
+#check {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  width: 60px;
+  height: 20px;
+  cursor: pointer;
+  border-radius: 50px; 
+}
+#check:hover {
+  background-color: rgba(3, 1, 1, 0.575);
+  color: rgb(233, 222, 222);
+  font-weight: 900;
+}
+
+
+#newGame {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 50px;
+  margin-right: 4%;
+  visibility: hidden;
+}
+#newGame:hover {
+  background-color: rgba(3, 1, 1, 0.575);
+  color: rgb(233, 222, 222);
+  font-weight: 900;
+}
