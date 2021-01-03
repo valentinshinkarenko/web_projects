@@ -125,3 +125,4 @@ BtnNewGame.addEventListener ('click', resetGame)
 
 //проверка изменений
 //second changes
+//changes in extra branch
