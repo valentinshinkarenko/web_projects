@@ -124,3 +124,4 @@ checkBtn.addEventListener ('click', game)
 BtnNewGame.addEventListener ('click', resetGame)
 
 //проверка изменений
+//second changes
