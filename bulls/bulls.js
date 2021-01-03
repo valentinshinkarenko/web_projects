@@ -122,3 +122,5 @@ play.addEventListener ('click', onClickComp);
 userInputEl.addEventListener ('input', check)
 checkBtn.addEventListener ('click', game)
 BtnNewGame.addEventListener ('click', resetGame)
+
+//проверка изменений
